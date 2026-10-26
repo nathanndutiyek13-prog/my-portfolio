@@ -2,12 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nathan's portfolio</title>
+    <title>Nathan | Portfolio</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <nav>
+        <div class="logo">Nathan</div>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <h1>Hi, I'm <span class="highlight">Nathan</span> 👋</h1>
+        <p>I build modern web applications and write clean code.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

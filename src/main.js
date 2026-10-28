@@ -1,14 +1,13 @@
-import "./style.css";
+const themeToggleBtn = document.getElementById("theme-toggle");
 
-const toggleBtn = document.getElementById("theme-toggle");
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 
-toggleBtn.addEventListener("click", () => {
-  const currentTheme = document.documentElement.getAttribute("data-theme");
-  if (currentTheme === "dark") {
-    document.documentElement.setAttribute("data-theme", "light");
-    toggleBtn.textContent = "🌙 Dark Mode";
-  } else {
-    document.documentElement.setAttribute("data-theme", "dark");
-    toggleBtn.textContent = "☀️ Light Mode";
-  }
-});
+    if (document.body.classList.contains("dark-mode")) {
+      themeToggleBtn.textContent = "☀️ Light Mode";
+    } else {
+      themeToggleBtn.textContent = "🌙 Dark Mode";
+    }
+  });
+}

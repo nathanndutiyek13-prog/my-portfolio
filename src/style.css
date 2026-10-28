@@ -98,3 +98,17 @@ nav a {
     gap: 1rem;
   }
 }
+#contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+body.dark-mode #contact {
+  background-color: #1a1a1a;
+}
+
+#contact a {
+  color: #0066cc;
+  text-decoration: none;
+}
